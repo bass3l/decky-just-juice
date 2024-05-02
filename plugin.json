@@ -1,0 +1,16 @@
+{
+  "name": "Just Juice",
+  "author": "Bassel Shmali",
+  "flags": [],
+  "publish": {
+    "tags": [
+      "decky",
+      "plugin",
+      "steam-deck",
+      "deck",
+      "battery"
+    ],
+    "description": "Enjoy your full display and only show the battery percentage so you don't suddenly run out of juice",
+    "image": "https://raw.githubusercontent.com/bass3l/decky-just-juice/master/assets/screenshot-1.png"
+  }
+}
