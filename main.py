@@ -2,7 +2,7 @@ import decky_plugin
 import os
 import subprocess
 
-MANGO_PRESETS_DIRECTORY_PATH = "/home/deck/.config/MangoHud" 
+MANGO_PRESETS_DIRECTORY_PATH = decky_plugin.DECKY_USER_HOME + "/.config/MangoHud" 
 MANGO_PRESETS_FILE_PATH = MANGO_PRESETS_DIRECTORY_PATH + "/presets.conf"
 
 PRESET_PERCENTAGE = """
