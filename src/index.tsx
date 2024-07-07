@@ -62,7 +62,18 @@ const Content: VFC<{ serverAPI: ServerAPI }> = ({serverAPI}) => {
           }]}
           onChange={onChange}
         />
-        <p style={{ fontSize: 14 }}>Might take a second to update.</p>
+        <ul style={{ padding: 7 }}>
+          <li style={{ fontSize: 14 }}>
+            The performance overlay should be set to 'OFF' to enable Just Juice configs.
+          </li>
+          <li style={{ fontSize: 14 }}>
+            Changing the main overlay level, will reset the Just Juice configs, make sure
+            to re-apply the desired level via the plugin.
+          </li>
+          <li style={{ fontSize: 14 }}>
+            Might take a second to update.
+          </li>
+        </ul>
       </PanelSectionRow>
     </PanelSection>
   );

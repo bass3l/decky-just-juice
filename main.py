@@ -54,6 +54,7 @@ class Plugin:
             file.close()
 
             Plugin.reload_mangohud_config()
+            Plugin.overwrite_no_display()
 
         except Exception as e:
             decky_plugin.logging.error(e)
@@ -67,6 +68,7 @@ class Plugin:
             file.close()
 
             Plugin.reload_mangohud_config()
+            Plugin.overwrite_no_display()
 
         except Exception as e:
             decky_plugin.logging.error(e)
@@ -90,4 +92,13 @@ class Plugin:
             bashCommand = "/usr/bin/mangohudctl set reload_config 1"
             process = subprocess.run(bashCommand, shell=True, executable='/bin/bash')
         except Exception as e:
+            decky_plugin.logging.error(e)
+
+    # Use '/usr/bin/mangohudctl' to disable the 'no_display' option in gamescope configs
+    def overwrite_no_display():
+        try:
+            bashCommand = "/usr/bin/mangohudctl set no_display false"
+            process = subprocess.run(bashCommand, shell=True, executable='/bin/bash')
+        except Exception as e:
+
             decky_plugin.logging.error(e)
